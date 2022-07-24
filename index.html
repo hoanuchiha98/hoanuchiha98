@@ -22,7 +22,7 @@
 
         #sleepQuestion {
             position: absolute;
-            left: 220px;
+            left: 150px;
             top: 230px;
             font-size: 80px;
         }
@@ -38,7 +38,7 @@
 
         #btnYes {
             position: absolute;
-            left: 480px;
+            left: 200px;
             top: 450px;
             background-color: #7bd806;
             cursor: pointer;
@@ -46,7 +46,7 @@
 
         #btnNo {
             position: absolute;
-            left: 860px;
+            left: 600px;
             top: 450px;
             background-color: #f4511e;
             transition: 0.3s;
@@ -55,11 +55,9 @@
     </style>
 </head>
 <body>
-<div class="wrapper">
-    <h1 id="sleepQuestion">Đi ngủ đi thôi, Trang?</h1>
-    <input type="button" id="btnYes" value="KHÔNG" onclick="yesClick()"/>
-    <input type="button" id="btnNo" value="NGỦ THÔI" onmouseover="noHover()" onclick="noHover()"/>
-</div>
+<h1 id="sleepQuestion">Đi ngủ đi thôi, Trang?</h1>
+<input type="button" id="btnYes" value="KHÔNG" onclick="yesClick()"/>
+<input type="button" id="btnNo" value="NGỦ THÔI" onmouseover="noHover()" onclick="noHover()"/>
 </body>
 <script>
     function yesClick() {
