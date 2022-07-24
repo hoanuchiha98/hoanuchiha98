@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Sleeping</title>
     <style>
@@ -52,19 +52,13 @@
             transition: 0.3s;
         }
 
-        @media all and (max-width: 320px) {
-            body {
-                background: #6bb96f;
-            }
-        }
-
     </style>
 </head>
 <body>
 <div class="wrapper">
     <h1 id="sleepQuestion">Đi ngủ đi thôi, Trang?</h1>
     <input type="button" id="btnYes" value="KHÔNG" onclick="yesClick()"/>
-    <input type="button" id="btnNo" value="NGỦ THÔI" onmouseover="noHover()"/>
+    <input type="button" id="btnNo" value="NGỦ THÔI" onmouseover="noHover()" onclick="noHover()"/>
 </div>
 </body>
 <script>
